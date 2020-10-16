@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ul1>:nth-child(1){
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul class="ul1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</body>
+<script>
+    var d=prompt("请输入你的成绩");
+    res=parseInt(d/10);
+    if(d>=60){
+        switch(res){
+            case 10:;
+            case 9:alert("周末没作业");
+            break;
+            case 8:alert("作业两边");
+            break;
+            case 7:alert("作业三遍");
+            break;
+            case 6:alert("作业5遍");
+            break;
+            // default:alert("lalal");
+        }
+    }else{
+        alert("直接补考");
+    }
+</script>
+</html>
